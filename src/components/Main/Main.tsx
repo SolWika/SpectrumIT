@@ -1,5 +1,10 @@
+import { ReactNode } from "react";
 import { MainStyled } from "../../styles/Main";
 
-export const Main = ({ className, children }: any) => {
-  return <MainStyled className={className}>{children}</MainStyled>;
+type MainComponentProps = {
+  children: ReactNode;
+};
+
+export const Main = ({ children }: MainComponentProps) => {
+  return <MainStyled>{children}</MainStyled>;
 };

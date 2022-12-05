@@ -1,23 +1,29 @@
-import { ButtonStyle } from "../../styles/Button";
+import { ReactNode } from "react";
+import { ButtonStyle as StyledButton } from "../../styles/Button";
 
 interface ButtonProps {
-  name: string;
+  children: ReactNode;
   color?: string;
   onClick?: any;
   type?: any;
-  disabled?: any;
+  disabled?: boolean;
 }
 
-export const Button = ({
+export const PrimaryButton = ({
   color,
-  name,
+  children,
   onClick,
   type,
   disabled,
 }: ButtonProps) => {
   return (
-    <ButtonStyle type={type} color={color} onClick={onClick}>
-      {name}
-    </ButtonStyle>
+    <StyledButton
+      disabled={disabled}
+      type={type}
+      color={color}
+      onClick={onClick}
+    >
+      {children}
+    </StyledButton>
   );
 };

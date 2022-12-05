@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Picture, Section, DataWrapper } from "./Person.style";
-import { Button } from "../Button/Button";
+import { PrimaryButton } from "../Button/Button";
 
 interface PersonData {
   name: string;
@@ -40,11 +40,9 @@ export const PersonCard = () => {
           <p>eye color: {person?.eye_color}</p>
         </DataWrapper>
       </Section>
-      <Button
-        onClick={handleClick}
-        color="rgba(53, 102, 14, 1)"
-        name="next profiles"
-      />
+      <PrimaryButton onClick={handleClick} color="rgba(53, 102, 14, 1)">
+        next profiles
+      </PrimaryButton>
     </>
   );
 };

@@ -1,9 +1,22 @@
-import { FormCard } from "../components/Form/Form";
+import { Link } from "../styles/Button";
+import { RegistrationForm } from "../components/Form/RegistrationForm";
+import {
+  HeaderForm,
+  BlueRectangle,
+  BackButton,
+} from "../components/Form/Form.style";
 
-export const RegistrationPage = ({ children }: any) => {
+export const RegistrationPage = () => {
   return (
     <div>
-      <FormCard />
+      <HeaderForm>
+        <Link to={`/`}>
+          <BackButton />
+        </Link>
+        <h1>formularz rejestracyjny</h1>
+        <BlueRectangle />
+      </HeaderForm>
+      <RegistrationForm />
     </div>
   );
 };

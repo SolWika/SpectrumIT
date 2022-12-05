@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Form, Field, ErrorMessage } from "formik";
 import { FiArrowLeft } from "react-icons/fi";
 
 export const HeaderForm = styled.div`
@@ -47,7 +46,7 @@ export const BlueRectangle = styled.div`
   background-color: rgba(7, 21, 148, 1);
 `;
 
-export const FormContainer = styled(Form)`
+export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,13 +69,24 @@ export const InputContainer = styled.div`
 
 export const LabelInput = styled.label``;
 
-export const FieldInput = styled(Field)`
-  margin-top: 26px;
+export const StyledInput = styled.input`
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 5px;
+  padding: 1.5rem;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 20px;
-  font-size: 16px;
   border: none;
   border-bottom: 2px solid black;
 `;
 
-export const ErrorInput = styled(ErrorMessage)``;
+export const ErrorMessage = styled.div`
+  width: 100%;
+  text-align: right;
+  color: #ff0000;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+`;

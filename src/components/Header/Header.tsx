@@ -1,11 +1,6 @@
 import { Link } from "../../styles/Button";
 import { HeaderStyled } from "../../styles/Header";
-
-import { Button } from "../Button/Button";
-
-interface HeaderProps {
-  to: any;
-}
+import { PrimaryButton } from "../Button/Button";
 
 export const Header = () => {
   return (
@@ -14,7 +9,7 @@ export const Header = () => {
         <p>Weronika Kurek-Pękala</p>
       </div>
       <Link to={`/registration`}>
-        <Button name="formularz rejestracyjny" />
+        <PrimaryButton>formularz rejestracyjny</PrimaryButton>
       </Link>
     </HeaderStyled>
   );
