@@ -1,18 +1,21 @@
+import { Link } from "../../styles/Button";
 import { HeaderStyled } from "../../styles/Header";
 
 import { Button } from "../Button/Button";
 
 interface HeaderProps {
-  onClick?: any;
+  to: any;
 }
 
-export const Header = ({ onClick }: HeaderProps) => {
+export const Header = () => {
   return (
     <HeaderStyled>
       <div>
         <p>Weronika Kurek-Pękala</p>
       </div>
-      <Button onClick={onClick} name="formularz rejestracyjny" />
+      <Link to={`/registration`}>
+        <Button name="formularz rejestracyjny" />
+      </Link>
     </HeaderStyled>
   );
 };

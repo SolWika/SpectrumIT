@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const ButtonStyle = styled.button`
   display: flex;
@@ -21,4 +22,8 @@ export const ButtonStyle = styled.button`
   &:hover {
     background-color: black;
   }
+`;
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
 `;

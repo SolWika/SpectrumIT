@@ -14,7 +14,6 @@ export const Section = styled.section`
   background: rgba(54, 44, 44, 0.39);
   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(280px);
-
   border-radius: 500px 60px 300px 100px;
 
   @media (min-width: 600px) {

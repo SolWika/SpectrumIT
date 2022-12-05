@@ -39,7 +39,7 @@ export const CloseModalButton = styled(MdClose)`
 export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   line-height: 1.8;
   color: #141414;
